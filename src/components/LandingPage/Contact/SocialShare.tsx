@@ -12,18 +12,26 @@ import {
 export default function SocialShare() {
   return (
     <div className="mt-5 flex items-center justify-center gap-3">
-      <FacebookShareButton url={"https://facebook.com"}>
+      <div>
+        <a href="https://www.facebook.com/">
         <FacebookIcon size={40} borderRadius={40} />
-      </FacebookShareButton>
-      <TwitterShareButton url={"https://Twitter.com"}>
+        </a>
+      </div>
+      <div>
+      <a href="https://www.twitter.com/">
         <TwitterIcon size={40} borderRadius={40} />
-      </TwitterShareButton>
-      <TelegramShareButton url={"https://web.telegram.org/"}>
+        </a>
+      </div>
+      <div>
+      <a href="https://web.telegram.org/">
         <TelegramIcon size={40} borderRadius={40} />
-      </TelegramShareButton>
-      <WhatsappShareButton url={"https://web.whatsapp.com/"}>
+      </a>
+      </div>
+      <div>
+        <a href="https://web.whatsapp.com/">
         <WhatsappIcon size={40} borderRadius={40} />
-      </WhatsappShareButton>
+        </a>
+      </div>
     </div>
   );
 }
