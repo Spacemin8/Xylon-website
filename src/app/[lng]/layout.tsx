@@ -15,22 +15,22 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export async function generateMetaData({ params }: {
-  params: {
-    lng: string;
-  };
-}) {
-  let {lng} = params
-  if (languages.indexOf(lng) < 0) {
-    lng = fallbackLng
-  }
-  const { t } = await useTranslation(lng)
+// export async function generateMetaData({ params }: {
+//   params: {
+//     lng: string;
+//   };
+// }) {
+//   let {lng} = params
+//   if (languages.indexOf(lng) < 0) {
+//     lng = fallbackLng
+//   }
+//   const { t } = await useTranslation(lng)
 
-  return {
-    title: t("title"),
-    content: t("description")
-  }
-}
+//   return {
+//     title: t("title"),
+//     content: t("description")
+//   }
+// }
 
 export default function RootLayout({
   children,
