@@ -39,7 +39,7 @@ const SmoothScrollLink: React.FC<SmoothScrollLinkProps> = ({
 
   return (
     <Link
-      href="/"
+      href={`/${lng}`}
       onClick={handleClick}
       passHref
       className="flex py-2 text-base font-semibold text-white/70 text-shadow-lg hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
